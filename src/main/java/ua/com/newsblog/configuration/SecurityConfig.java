@@ -7,11 +7,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import ua.com.newsblog.service.RoleService;
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan(basePackages = {"ua.com.newsblog.service", "ua.com.newsblog.dao", "ua.com.newsblog.repository"})
+@ComponentScan(basePackages = { "ua.com.newsblog.dao", "ua.com.newsblog.repository"})
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String ADMIN_REQUEST_URl = "/admin/**";
@@ -27,8 +26,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public UserDetailsService userDetailsService;
 
-    @Autowired
-    private RoleService roleService;
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
