@@ -4,7 +4,7 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import ua.com.newsblog.listener.SessionListener;
+
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
@@ -35,7 +35,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     public void onStartup(ServletContext servletContext) throws ServletException {
         super.onStartup(servletContext);
         // Управление жизненным циклом корневого контекста приложения
-        servletContext.addListener(new SessionListener());
+       // servletContext.addListener(new SessionListener());
 
         FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encodingFilter", new CharacterEncodingFilter());
         encodingFilter.setInitParameter("encoding", "UTF-8");

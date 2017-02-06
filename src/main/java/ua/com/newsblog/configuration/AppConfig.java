@@ -18,7 +18,7 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @EnableTransactionManagement
 @ComponentScan(basePackages = "ua.com.newsblog")
-@EnableJpaRepositories(basePackages = "ua.com.newsblog.repository")
+@EnableJpaRepositories(basePackages = "ua.com.newsblog.dao")
 
 public class AppConfig extends WebMvcConfigurerAdapter {
 
@@ -28,7 +28,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setPrefix("/jsp/");  // /jsp/
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }

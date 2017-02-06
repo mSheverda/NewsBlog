@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan(basePackages = { "ua.com.newsblog.dao", "ua.com.newsblog.repository"})
+@ComponentScan(basePackages = { "ua.com.newsblog.dao"})
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private static final String ADMIN_REQUEST_URl = "/admin/**";
@@ -22,9 +22,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private static final String PASSWORD = "password";
 
     private static final String ACCESS_DENIED_PAGE = "/forbidden_exception";
-
-    @Autowired
-    public UserDetailsService userDetailsService;
 
 
     @Override

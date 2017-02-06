@@ -2,5 +2,23 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/css" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/fonts" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/img" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/js" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/about.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/admin.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/carouselFragment.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/customError.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/editBlogModalFragment.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/editPageModalFragment.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/footerFrag.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/headerFragment.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/login.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/loginForm.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/page.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/search.jsp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/jsp/single.jsp" charset="windows-1251" />
   </component>
 </project>
